@@ -1,0 +1,15 @@
+# Copyright 2021 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'ijay contra'
+on:
+  - workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+      keyboard: '["contra"]'
+      alphas: '["QWERTY"]'
+      nav: '["vi"]'
+      clipboard: '["Mac"]'
+      
