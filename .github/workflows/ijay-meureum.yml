@@ -8,7 +8,7 @@ jobs:
   build:
     uses: ./.github/workflows/main.yml
     with:
-      keyboard: '["meureum"]'
+      keyboard: '["jaykeeb/meureum"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
       clipboard: '["Mac"]'
