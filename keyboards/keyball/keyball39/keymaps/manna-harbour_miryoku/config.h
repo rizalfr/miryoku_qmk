@@ -40,10 +40,10 @@ LAYOUT_universal( \
     XXX, XXX, XXX, K32, K33, K34,   K35, K36, XXX, XXX, XXX, K37 \
 )
 
-// Keep all pointing controls on the trackball half.  On Base, swap the Media
-// and Mouse layer holds so the physical bottom-right key is Esc / Mouse.  On
-// Mouse, use the right home-row index, middle, and ring keys for click, context
-// click, and momentary trackball scrolling.
+// Arrange the thumb layers as Media, Navigation, Function on the left and
+// Symbol, Number, Mouse on the right.  Keep pointing controls on the trackball
+// half; Mouse uses the right home-row index, middle, and ring keys for clicks
+// and momentary trackball scrolling.
 #define LAYOUT_keyball39_base( \
     K00, K01, K02, K03, K04,        K05, K06, K07, K08, K09, \
     K10, K11, K12, K13, K14,        K15, K16, K17, K18, K19, \
@@ -54,7 +54,7 @@ LAYOUT_miryoku( \
     K00, K01, K02, K03, K04,        K05, K06, K07, K08, K09, \
     K10, K11, K12, K13, K14,        K15, K16, K17, K18, K19, \
     K20, K21, K22, K23, K24,        K25, K26, K27, K28, K29, \
-    N30, N31, K32, K33, K34,        LT(U_MEDIA, KC_TAB), K36, LT(U_MOUSE, KC_ESC), N38, N39 \
+    N30, N31, LT(U_MEDIA, KC_ESC), LT(U_NAV, KC_SPC), LT(U_FUN, KC_TAB),        LT(U_SYM, KC_ENT), LT(U_NUM, KC_BSPC), LT(U_MOUSE, KC_DEL), N38, N39 \
 )
 
 #define LAYOUT_keyball39_mouse( \
