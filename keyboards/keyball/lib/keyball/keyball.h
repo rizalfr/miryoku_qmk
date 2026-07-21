@@ -69,7 +69,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Constants
 
 #define KEYBALL_TX_GETINFO_INTERVAL 500
-#define KEYBALL_TX_GETINFO_MAXTRY 10
 #define KEYBALL_TX_GETMOTION_INTERVAL 4
 
 #if (PRODUCT_ID & 0xff00) == 0x0000
