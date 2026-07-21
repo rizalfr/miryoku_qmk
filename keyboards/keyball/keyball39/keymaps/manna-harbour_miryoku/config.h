@@ -5,6 +5,14 @@
 
 #define MASTER_LEFT
 
+// Automatically activate the Miryoku mouse layer when the trackball moves.
+#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+#define AUTO_MOUSE_DEFAULT_LAYER 5 // Miryoku U_MOUSE
+
+// Compatibility for the bundled Keyball driver with newer QMK auto-mouse API.
+#define set_auto_mouse_timeout(timeout) ((void)(timeout))
+#define get_auto_mouse_timeout() AUTO_MOUSE_TIME
+
 #define XXX KC_NO
 
 // Compatibility aliases for current QMK keycode names.
