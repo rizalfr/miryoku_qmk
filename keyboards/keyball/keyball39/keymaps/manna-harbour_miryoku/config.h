@@ -37,8 +37,41 @@ LAYOUT_universal( \
     K00, K01, K02, K03, K04,        K05, K06, K07, K08, K09, \
     K10, K11, K12, K13, K14,        K15, K16, K17, K18, K19, \
     K20, K21, K22, K23, K24,        K25, K26, K27, K28, K29, \
-    XXX, XXX, XXX, K32, K33, K34,   K35, K36, K37, XXX, XXX, XXX \
+    XXX, XXX, XXX, K32, K33, K34,   K35, K36, XXX, XXX, XXX, K37 \
 )
+
+// Keep all pointing controls on the trackball half.  On Base, swap the Media
+// and Mouse layer holds so the physical bottom-right key is Esc / Mouse.  On
+// Mouse, use the right home-row index, middle, and ring keys for click, context
+// click, and momentary trackball scrolling.
+#define LAYOUT_keyball39_base( \
+    K00, K01, K02, K03, K04,        K05, K06, K07, K08, K09, \
+    K10, K11, K12, K13, K14,        K15, K16, K17, K18, K19, \
+    K20, K21, K22, K23, K24,        K25, K26, K27, K28, K29, \
+    N30, N31, K32, K33, K34,        K35, K36, K37, N38, N39 \
+) \
+LAYOUT_miryoku( \
+    K00, K01, K02, K03, K04,        K05, K06, K07, K08, K09, \
+    K10, K11, K12, K13, K14,        K15, K16, K17, K18, K19, \
+    K20, K21, K22, K23, K24,        K25, K26, K27, K28, K29, \
+    N30, N31, K32, K33, K34,        LT(U_MEDIA, KC_TAB), K36, LT(U_MOUSE, KC_ESC), N38, N39 \
+)
+
+#define LAYOUT_keyball39_mouse( \
+    K00, K01, K02, K03, K04,        K05, K06, K07, K08, K09, \
+    K10, K11, K12, K13, K14,        K15, K16, K17, K18, K19, \
+    K20, K21, K22, K23, K24,        K25, K26, K27, K28, K29, \
+    N30, N31, K32, K33, K34,        K35, K36, K37, N38, N39 \
+) \
+LAYOUT_miryoku( \
+    K00, K01, K02, K03, K04,        K05, K06, K07, K08, K09, \
+    K10, K11, K12, K13, K14,        KC_BTN1, KC_BTN2, SCRL_MO, K18, K19, \
+    K20, K21, K22, K23, K24,        K25, K26, K27, K28, K29, \
+    N30, N31, K32, K33, K34,        K35, K36, K37, N38, N39 \
+)
+
+#define MIRYOKU_LAYERMAPPING_BASE LAYOUT_keyball39_base
+#define MIRYOKU_LAYERMAPPING_MOUSE LAYOUT_keyball39_mouse
 
 // Miryoku uses more than the eight layers supported by Keyball's default.
 #undef LAYER_STATE_8BIT
