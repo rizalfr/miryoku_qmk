@@ -3,6 +3,8 @@
 
 #pragma once
 
+#define MASTER_LEFT
+
 #define XXX KC_NO
 
 // Compatibility aliases for current QMK keycode names.
