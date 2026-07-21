@@ -9,8 +9,3 @@
 void keyboard_post_init_user(void) {
     set_auto_mouse_enable(true);
 }
-
-layer_state_t layer_state_set_user(layer_state_t state) {
-    keyball_set_scroll_mode((state & (1UL << U_MOUSE)) != 0);
-    return state;
-}
