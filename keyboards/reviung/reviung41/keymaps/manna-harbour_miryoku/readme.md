@@ -1,6 +1,6 @@
 # Miryoku for Reviung41
 
-This keymap maps Miryoku's 3x5+3 layout to the Reviung41. The four outer switches in the dedicated thumb cluster and the two innermost switches of the bottom alpha row provide the six Miryoku thumb keys. The large center thumb switch sends Enter when tapped and activates the Mouse layer when held. The unused outer alpha columns are disabled.
+This keymap maps Miryoku's 3x5 alpha blocks to the center-facing keys of the Reviung41 and disables the far-left and far-right keys of each alpha row. On the five-key thumb row, the outer pairs retain Miryoku's Escape/Media, Space/Nav, Backspace/Num, and Delete/Fun functions. The large center thumb switch sends Enter when tapped and activates the Mouse layer when held. The standard Tab/Mouse and Enter/Symbol thumb assignments are omitted.
 
 RGB lighting, the console, and the command feature are disabled to keep the firmware within the available ATmega32U4 application space.
 
