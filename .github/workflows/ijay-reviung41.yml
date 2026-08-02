@@ -1,0 +1,14 @@
+# Copyright 2026 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'ijay reviung41'
+on:
+  - workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+      keyboard: '["reviung/reviung41"]'
+      alphas: '["QWERTY"]'
+      nav: '["vi"]'
+      clipboard: '["Mac"]'
